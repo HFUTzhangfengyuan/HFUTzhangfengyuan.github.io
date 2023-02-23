@@ -1,0 +1,1152 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="单片机系统综合设计, 点亮一颗MCU">
+    <meta name="description" content="HFUT电信工单片机系统综合设计（验收完成开源）">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>单片机系统综合设计 | 点亮一颗MCU</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/css/reward.css">
+    
+
+
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0"><script src="/assets/js/DPlayer.min.js"></script></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">点亮一颗MCU</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">点亮一颗MCU</div>
+        <div class="logo-desc">
+            
+            所有的出发，都是为了回家
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '1c813436ae2b0d170c5ddd12ac3616b3e2190ecc0683de65cbc99efa6fdace40';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://image.lceda.cn/avatars/2023/2/wgJTvT9uEKemUwC78Rg8IKtiUtp788dPjsZkvFjA.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">单片机系统综合设计</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-02-22
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3.1k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="设计目的"><a href="#设计目的" class="headerlink" title="设计目的"></a>设计目的</h2><h2 id="设计任务"><a href="#设计任务" class="headerlink" title="设计任务"></a>设计任务</h2><h3 id="基础任务"><a href="#基础任务" class="headerlink" title="基础任务:"></a>基础任务:</h3><p>1.开机12864显示“合肥工业大学 <em>年</em>月*日”3秒；<br>2.DHT11温湿度数据采集，通过液晶屏显示；<br>3.光照传感器用于监测光照强度，通过液晶屏显示；<br>4.通过按键设置湿度、光照阈值，通过液晶屏显示；<br>5.湿度、光照在阈值范围之外，蜂鸣器报警。</p>
+<h3 id="拓展任务"><a href="#拓展任务" class="headerlink" title="拓展任务:"></a>拓展任务:</h3><p>可以通过PC的串口调试助手显示温湿度的值</p>
+<p>可以通过PC的串口调试助手显示光敏的值</p>
+<p>添加了火焰火灾传感器</p>
+<p>火焰火灾传感器的值和阈值均可通过按键调节</p>
+<p>所有阈值均可通过PC的串口调试助手进行调节</p>
+<p>所有阈值（包含火焰传感器的阈值）超出均参与报警</p>
+<p>添加ESP8266参数进行网络传输数据</p>
+<p>………</p>
+<h2 id="原理框图及说明"><a href="#原理框图及说明" class="headerlink" title="原理框图及说明"></a>原理框图及说明</h2><p>硬件总体结构示意图如下图所示：</p>
+<p><img src="/../pic/%E7%A1%AC%E4%BB%B6%E8%BF%9E%E6%8E%A5%E5%9B%BE.png" alt="硬件连接图"></p>
+<h2 id="主要电路说明、元件选择及参数计算"><a href="#主要电路说明、元件选择及参数计算" class="headerlink" title="主要电路说明、元件选择及参数计算"></a>主要电路说明、元件选择及参数计算</h2><h3 id="OLED模块："><a href="#OLED模块：" class="headerlink" title="OLED模块："></a>OLED模块：</h3><p><img src="/../pic/OLED%E5%B1%8F%E5%B9%95%E6%A0%B8%E5%BF%83%E7%94%B5%E8%B7%AF.png" alt="OLED模块原理图"></p>
+<p>所有电阻电容采用0603封装，体积小的同时由于使用贴片，也更加稳定。在实际应用中也均是使用了贴片的设计。此电路 参考驱动SSD1306厂家设计，此电路为经典电路。</p>
+<h3 id="ESP8266模块："><a href="#ESP8266模块：" class="headerlink" title="ESP8266模块："></a>ESP8266模块：</h3><p><img src="/../pic/ESP%E6%A8%A1%E5%9D%97%E7%94%B5%E8%B7%AF.png" alt="ESP8266原理图"></p>
+<p>ESP模块则是采用了ESP12F来进行设计，相较于8266,12F价格更低，且可以烧写8266系列的固件。原理图来自于安信可科技（ESP12F厂家）的参考电路设计。</p>
+<h3 id="串口部分："><a href="#串口部分：" class="headerlink" title="串口部分："></a>串口部分：</h3><p><img src="/../pic/PC-%E4%B8%B2%E5%8F%A3%E7%94%B5%E8%B7%AF.png" alt="串口CH340电路"></p>
+<p>本电路也仍未经典电路了，使用TYPE-C的调试接口，在兼容供电的同时，可以进行数据传输，使用CH340C的芯片也是因为手边有，仍可进行别的元器件的替换。在实际使用中，可以直接通过STM32的串口1进行串口调试。进行数据的发送与接收。非常方便。</p>
+<h3 id="电源管理部分："><a href="#电源管理部分：" class="headerlink" title="电源管理部分："></a>电源管理部分：</h3><p><img src="/../pic/%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86-OLED.png" alt="电源管理电路-OLED"></p>
+<p>电源管理此电路可以输出3.3V（误差2%）具有稳压的作用。</p>
+<p><img src="/../pic/%E7%94%B5%E6%BA%90%E7%AE%A1%E7%90%86-%E6%A0%B8%E5%BF%83%E6%9D%BF.png" alt="电源管理-核心板电源管理"></p>
+<p>此电路可以将输入的5V进行降压至3.3V。</p>
+<h3 id="光敏电阻部分："><a href="#光敏电阻部分：" class="headerlink" title="光敏电阻部分："></a>光敏电阻部分：</h3><p><img src="/../pic/%E5%85%89%E6%95%8F%E7%94%B5%E9%98%BB%E9%87%87%E9%9B%86%E4%BC%A0%E6%84%9F%E5%99%A8%E7%94%B5%E8%B7%AF.png" alt="光敏电阻传感器采集电路"></p>
+<p>此电路在实际应用中加入的LM393构成比较器对输入的模拟量进行比较然后在OUT口输出结果。但是在本次设计中由于需要的是采集的结果，所以并不采用他的输出的数字量，而是模拟量。</p>
+<h3 id="火焰传感部分："><a href="#火焰传感部分：" class="headerlink" title="火焰传感部分："></a>火焰传感部分：</h3><p><img src="/../pic/%E7%81%AB%E7%84%B0%E4%BC%A0%E6%84%9F%E5%99%A8%E7%94%B5%E8%B7%AF.png" alt="火焰传感器电路图"></p>
+<p>光敏电阻和火焰传感器的电路类似，这里就不进行赘述。</p>
+<h3 id="温湿度采集部分："><a href="#温湿度采集部分：" class="headerlink" title="温湿度采集部分："></a>温湿度采集部分：</h3><p><img src="/../pic/%E6%B8%A9%E6%B9%BF%E5%BA%A6%E9%87%87%E9%9B%86%E4%BC%A0%E6%84%9F%E5%99%A8%E7%94%B5%E8%B7%AF.png" alt="温湿度采集原理图"></p>
+<p>使用DHT11进行温湿度采集，DATA进行单线的数据通信。</p>
+<p>——一点小tips：如下图的单片机系统设计拓展版所示，在板子上有关于一些数据选择的跳线帽，这是因为在STM32核心板中控制的按键只有四个，是无法进行6个量的控制的，所以在拓展版中添加了四个按键并通过跳线帽来进行控制。</p>
+<h2 id="总体电路设计"><a href="#总体电路设计" class="headerlink" title="总体电路设计"></a>总体电路设计</h2><h3 id="核心板原理图："><a href="#核心板原理图：" class="headerlink" title="核心板原理图："></a>核心板原理图：</h3><p>![STM核心板原理图-1](..&#x2F;pic&#x2F;SCH_彩色丝印_0-STM32_F103CBT6_2023-02-22 (1).png)</p>
+<p><img src="/../pic/SCH_%E5%BD%A9%E8%89%B2%E4%B8%9D%E5%8D%B0_0-STM32_F103CBT6_2_2023-02-22.png" alt="STM核心板原理图-2"></p>
+<h3 id="拓展版原理图："><a href="#拓展版原理图：" class="headerlink" title="拓展版原理图："></a>拓展版原理图：</h3><p><img src="/../pic/Schematic_%E5%8D%95%E7%89%87%E6%9C%BA%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E3%80%90%E5%B7%B2%E5%AE%8C%E6%88%90%E9%AA%8C%E8%AF%81%E3%80%91_2023-02-22.png" alt="单片机系统综合设计拓展版原理图"></p>
+<h2 id="软件设计思路及框图"><a href="#软件设计思路及框图" class="headerlink" title="软件设计思路及框图"></a>软件设计思路及框图</h2><p><img src="/../pic/%E8%BD%AF%E4%BB%B6%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt="软件设计流程图"></p>
+<p>tips:本工程基于STM32CubeMX进行整体配置，基础配置相关参数这里不做说明，详细配置可参考发布在开源平台的附件，里面附带了CubeMX的工程文件。</p>
+<p>下面针对软件相关进行代码演示：</p>
+<p>系统初始化代码：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> MX_GPIO_Init();</span><br><span class="line"> MX_USART1_UART_Init();</span><br><span class="line"> MX_ADC1_Init();<span class="comment">//CubeMX系统初始化</span></span><br><span class="line"> MX_ADC2_Init();</span><br><span class="line"> MX_I2C1_Init();</span><br><span class="line"> MX_USART3_UART_Init();</span><br><span class="line"> <span class="comment">/* USER CODE BEGIN 2 */</span></span><br><span class="line"> 	OLED_Init();<span class="comment">//相关外设初始化</span></span><br><span class="line">   OLED_Clear();</span><br><span class="line">HAL_Delay(<span class="number">100</span>);</span><br></pre></td></tr></table></figure>
+
+<p>展示日期及汉字并停留三秒：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">OLED_ShowCHinese(<span class="number">0</span>,<span class="number">0</span>,<span class="number">13</span>);<span class="comment">//合</span></span><br><span class="line">OLED_ShowCHinese(<span class="number">16</span>,<span class="number">0</span>,<span class="number">14</span>);<span class="comment">//肥</span></span><br><span class="line">OLED_ShowCHinese(<span class="number">32</span>,<span class="number">0</span>,<span class="number">15</span>);<span class="comment">//工</span></span><br><span class="line">OLED_ShowCHinese(<span class="number">48</span>,<span class="number">0</span>,<span class="number">16</span>);<span class="comment">//业</span></span><br><span class="line">OLED_ShowCHinese(<span class="number">64</span>,<span class="number">0</span>,<span class="number">17</span>);<span class="comment">//大</span></span><br><span class="line">OLED_ShowCHinese(<span class="number">80</span>,<span class="number">0</span>,<span class="number">18</span>);<span class="comment">//学</span></span><br><span class="line">OLED_ShowCHinese(<span class="number">32</span>,<span class="number">2</span>,<span class="number">19</span>);<span class="comment">//年</span></span><br><span class="line">OLED_ShowCHinese(<span class="number">54</span>,<span class="number">2</span>,<span class="number">20</span>);<span class="comment">//月</span></span><br><span class="line">OLED_ShowCHinese(<span class="number">86</span>,<span class="number">2</span>,<span class="number">21</span>);<span class="comment">//日</span></span><br><span class="line">OLED_ShowNum(<span class="number">0</span>,<span class="number">2</span>,<span class="number">2023</span>,<span class="number">4</span>,<span class="number">16</span>);<span class="comment">//相关时间</span></span><br><span class="line">OLED_ShowNum(<span class="number">48</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">16</span>);</span><br><span class="line">OLED_ShowNum(<span class="number">70</span>,<span class="number">2</span>,<span class="number">23</span>,<span class="number">2</span>,<span class="number">16</span>);</span><br><span class="line">HAL_Delay(<span class="number">3000</span>);</span><br></pre></td></tr></table></figure>
+
+<p>发送ESP12FAT指令：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">HAL_UART_Transmit(&amp;huart3, (<span class="type">uint8_t</span> *)<span class="string">&quot;AT+CIPMUX=1\r\n&quot;</span>, <span class="number">15</span> , <span class="number">0xffff</span>);</span><br><span class="line">HAL_Delay(<span class="number">200</span>);  <span class="comment">//延时1s  </span></span><br><span class="line">HAL_UART_Transmit(&amp;huart3, (<span class="type">uint8_t</span> *)<span class="string">&quot;AT+CIPSERVER=1,5000\r\n&quot;</span>, <span class="number">23</span> , <span class="number">0xffff</span>);</span><br><span class="line">HAL_Delay(<span class="number">200</span>);  <span class="comment">//延时1s</span></span><br><span class="line">HAL_UART_Transmit(&amp;huart3, (<span class="type">uint8_t</span> *)<span class="string">&quot;AT+CIFSR\r\n&quot;</span>, <span class="number">12</span> , <span class="number">0xffff</span>);</span><br><span class="line">HAL_Delay(<span class="number">200</span>);  <span class="comment">//延时1s  </span></span><br></pre></td></tr></table></figure>
+
+<p>中断：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">HAL_UART_RxCpltCallback</span><span class="params">(UART_HandleTypeDef *huart)</span><span class="comment">//触发中断，进行中断回调函数</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="comment">/* 判断是哪个串口触发的中断 */</span></span><br><span class="line">    <span class="keyword">if</span>(huart -&gt;Instance == USART1||huart -&gt;Instance == USART3)</span><br></pre></td></tr></table></figure>
+
+<p>解析收到的标志位并根据标志位进行相关阈值的调整：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(*recv_buf==<span class="string">&#x27;A&#x27;</span>)&#123;</span><br><span class="line">			<span class="keyword">if</span>(LVAL&lt;<span class="number">3700</span>)&#123;</span><br><span class="line">			LVAL+=<span class="number">100</span>;&#125;</span><br><span class="line">			<span class="keyword">else</span>&#123;</span><br><span class="line">			LVAL=<span class="number">100</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
+
+<p>进行DHT11的数据通信以及两路ADC采样：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">DHT11();</span><br><span class="line">HAL_ADC_Start(&amp;hadc1);</span><br><span class="line">   HAL_ADC_PollForConversion(&amp;hadc1 ,<span class="number">50</span>);</span><br><span class="line">HAL_UART_Transmit(&amp;huart3, (<span class="type">uint8_t</span> *)<span class="string">&quot;AT+CIPSEND=0,31\r\n&quot;</span>, <span class="number">18</span> , <span class="number">0xffff</span>);</span><br><span class="line">   HAL_Delay(<span class="number">200</span>);  <span class="comment">//延时1s</span></span><br><span class="line">HAL_UART_Transmit(&amp;huart3, (<span class="type">uint8_t</span> *)<span class="string">&quot;HFUT-SCI-EIE 2020213395: hello!&quot;</span>,<span class="keyword">sizeof</span>(str), <span class="number">0xffff</span>);</span><br><span class="line">HAL_Delay(<span class="number">200</span>); </span><br><span class="line">   <span class="keyword">if</span>(HAL_IS_BIT_SET(HAL_ADC_GetState(&amp;hadc1), HAL_ADC_STATE_REG_EOC))</span><br><span class="line">   &#123;</span><br><span class="line">     Val = HAL_ADC_GetValue(&amp;hadc1);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">HAL_ADC_Start(&amp;hadc2);</span><br><span class="line">   HAL_ADC_PollForConversion(&amp;hadc2 ,<span class="number">50</span>);</span><br><span class="line">   <span class="keyword">if</span>(HAL_IS_BIT_SET(HAL_ADC_GetState(&amp;hadc2), HAL_ADC_STATE_REG_EOC))</span><br><span class="line">   &#123;</span><br><span class="line">     Val2 = HAL_ADC_GetValue(&amp;hadc2);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<p>将采样信号通过串口发送（串口一、串口三）：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sprintf</span>(str,<span class="string">&quot;Light intensity is %d \r\n&quot;</span>,Val);</span><br><span class="line">	<span class="built_in">sprintf</span>(str2,<span class="string">&quot;Flame intensity is %d \r\n&quot;</span>,Val2);</span><br><span class="line">	HAL_UART_Transmit(&amp;huart1, (<span class="type">uint8_t</span> *)&amp;str,<span class="keyword">sizeof</span>(str), <span class="number">0xffff</span>);</span><br><span class="line">	HAL_UART_Transmit(&amp;huart1, (<span class="type">uint8_t</span> *)&amp;str2,<span class="keyword">sizeof</span>(str2), <span class="number">0xffff</span>);</span><br><span class="line"></span><br><span class="line">	HAL_UART_Transmit(&amp;huart3, (<span class="type">uint8_t</span> *)<span class="string">&quot;AT+CIPSEND=0,23\r\n&quot;</span>, <span class="number">18</span> , <span class="number">0xffff</span>);</span><br><span class="line">    HAL_Delay(<span class="number">200</span>);  <span class="comment">//延时1s</span></span><br><span class="line">	HAL_UART_Transmit(&amp;huart3, (<span class="type">uint8_t</span> *)&amp;str,<span class="keyword">sizeof</span>(str), <span class="number">0xffff</span>);</span><br><span class="line">	HAL_Delay(<span class="number">200</span>); </span><br></pre></td></tr></table></figure>
+
+<p>四组数据是否有超过阈值，并进行OLED显示：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(Val2&lt;FVAL)&#123;</span><br><span class="line">HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_RESET);</span><br><span class="line">HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_RESET);<span class="comment">//蜂鸣器预警</span></span><br><span class="line">OLED_ShowCHinese(<span class="number">32</span>,<span class="number">2</span>,<span class="number">7</span>);</span><br><span class="line">OLED_ShowCHinese(<span class="number">48</span>,<span class="number">2</span>,<span class="number">8</span>);</span><br><span class="line">OLED_ShowCHinese(<span class="number">64</span>,<span class="number">2</span>,<span class="number">10</span>);</span><br></pre></td></tr></table></figure>
+
+<p>蜂鸣器报警、串口三发送警告信息：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(Val&gt;LVAL)&#123;</span><br><span class="line">	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_3,GPIO_PIN_RESET);</span><br><span class="line">	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_RESET);<span class="comment">//蜂鸣器预警</span></span><br><span class="line">	HAL_UART_Transmit(&amp;huart3, (<span class="type">uint8_t</span> *)<span class="string">&quot;AT+CIPSEND=0,8\r\n&quot;</span>, <span class="number">18</span> , <span class="number">0xffff</span>);</span><br><span class="line">    HAL_Delay(<span class="number">200</span>);  <span class="comment">//延时1s</span></span><br><span class="line">	HAL_UART_Transmit(&amp;huart3, (<span class="type">uint8_t</span> *)<span class="string">&quot;WARNING!&quot;</span>,<span class="number">8</span>, <span class="number">0xffff</span>);</span><br><span class="line">	HAL_Delay(<span class="number">100</span>); </span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<p>判断是否有按键按下，根据不同的按键进行阈值的控制</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_15)==GPIO_PIN_RESET)&#123;</span><br><span class="line">	HAL_Delay(<span class="number">10</span>);</span><br><span class="line">	<span class="keyword">if</span>(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_15)==GPIO_PIN_RESET)&#123;</span><br><span class="line">		<span class="keyword">if</span>(LVAL&lt;<span class="number">3400</span>)&#123;</span><br><span class="line">		LVAL+=<span class="number">100</span>;&#125;</span><br><span class="line">		<span class="keyword">else</span>&#123;</span><br><span class="line">		LVAL=<span class="number">100</span>;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>DHT11通信协议解析及相关工作方式：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;dht11.h&quot;</span><span class="comment">//这里只附赠相关c文件代码 详细完整代码见开源平台</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;oled.h&quot;</span></span></span><br><span class="line"><span class="keyword">extern</span> <span class="type">float</span> WVAL;</span><br><span class="line"><span class="keyword">extern</span> <span class="type">float</span> SVAL; </span><br><span class="line"><span class="keyword">extern</span> UART_HandleTypeDef huart1;</span><br><span class="line"><span class="type">char</span> <span class="built_in">string</span>[<span class="number">32</span>];</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief  温湿度传感器主函数</span></span><br><span class="line"><span class="comment">  * @param  void</span></span><br><span class="line"><span class="comment">  * @retval None</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  </span><br><span class="line">	<span class="type">uint16_t</span> data[<span class="number">5</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">	  </span><br><span class="line">	  </span><br><span class="line"><span class="type">void</span> <span class="title function_">DHT11</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(DHT11_READ_DATA() == <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Succeed！\r\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Failed！！\r\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    HAL_Delay(<span class="number">1000</span>);                              </span><br><span class="line">  </span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief  温湿度传感器启动信号发送</span></span><br><span class="line"><span class="comment">  * @param  void</span></span><br><span class="line"><span class="comment">  * @retval None</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">DHT11_START</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    DHT11_GPIO_MODE_SET(<span class="number">0</span>);                         <span class="comment">//  主机设置为输出模式</span></span><br><span class="line">    </span><br><span class="line">    DHT11_PIN_RESET;                                <span class="comment">//  主机拉低电平</span></span><br><span class="line">    </span><br><span class="line">    HAL_Delay(<span class="number">20</span>);                                  <span class="comment">//  主机等待 18 &lt; ms &gt; 30</span></span><br><span class="line">    </span><br><span class="line">    DHT11_GPIO_MODE_SET(<span class="number">1</span>);                         <span class="comment">//  主机设置为输入模式，等待DHT11答应</span></span><br><span class="line">&#125;                                                   <span class="comment">//  因为设置了上拉输入，GPIO -&gt; 1</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief  读取一位数据 1bit</span></span><br><span class="line"><span class="comment">  * @param  void</span></span><br><span class="line"><span class="comment">  * @retval 0/1</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> <span class="title function_">DHT11_READ_BIT</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span>(!DHT11_READ_IO);                          <span class="comment">//  过度数据的低电平 </span></span><br><span class="line">    </span><br><span class="line">    Coarse_delay_us(<span class="number">40</span>);</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">if</span>(DHT11_READ_IO)                               <span class="comment">//  此时如果还为高电平则数据为 1</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span>(DHT11_READ_IO);                       <span class="comment">//  过度数据的高电平</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;   </span><br><span class="line">    <span class="keyword">else</span>                                            <span class="comment">//  若此时为低则为 0</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief  读取一个字节数据 1byte / 8bit</span></span><br><span class="line"><span class="comment">  * @param  void</span></span><br><span class="line"><span class="comment">  * @retval temp</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> <span class="title function_">DHT11_READ_BYTE</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">uint8_t</span> i,temp = <span class="number">0</span>;                             <span class="comment">//  暂时存储数据</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;<span class="number">8</span> ;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        temp &lt;&lt;= <span class="number">1</span>;                                 </span><br><span class="line">        <span class="keyword">if</span>(DHT11_READ_BIT())                        <span class="comment">//  1byte -&gt; 8bit</span></span><br><span class="line">        &#123;</span><br><span class="line">            temp |= <span class="number">1</span>;                              <span class="comment">//  0000 0001</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> temp;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief  读取温湿度传感器数据 5byte / 40bit</span></span><br><span class="line"><span class="comment">  * @param  void</span></span><br><span class="line"><span class="comment">  * @retval 0/1/2</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> <span class="title function_">DHT11_READ_DATA</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">uint8_t</span> i;</span><br><span class="line">    </span><br><span class="line">    DHT11_START();                                  <span class="comment">//  主机发送启动信号</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span>(DHT11_Check())                               <span class="comment">//  如果DHT11应答     </span></span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="keyword">while</span>(!DHT11_READ_IO);                      <span class="comment">//  过度DHT11答复信号的低电平</span></span><br><span class="line">        <span class="keyword">while</span>(DHT11_READ_IO);                       <span class="comment">//  过度DHT11答复信号的高电平</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;<span class="number">5</span>; i++)</span><br><span class="line">        &#123;                        </span><br><span class="line">            data[i] = DHT11_READ_BYTE();            <span class="comment">//  读取 5byte</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(data[<span class="number">0</span>] + data[<span class="number">1</span>] + data[<span class="number">2</span>] + data[<span class="number">3</span>] == data[<span class="number">4</span>])</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;当前湿度：%d.%d%%RH当前温度：%d.%d°&quot;</span>,data[<span class="number">0</span>],data[<span class="number">1</span>],data[<span class="number">2</span>],data[<span class="number">3</span>]);</span><br><span class="line">			</span><br><span class="line">			<span class="built_in">sprintf</span>(<span class="built_in">string</span>,<span class="string">&quot;%d.%d&quot;</span>,data[<span class="number">2</span>],data[<span class="number">3</span>]);</span><br><span class="line">			OLED_ShowString(<span class="number">80</span>,<span class="number">4</span>,(<span class="type">uint8_t</span> *)<span class="built_in">string</span>,<span class="number">16</span>);</span><br><span class="line">			OLED_ShowCHinese(<span class="number">112</span>,<span class="number">4</span>,<span class="number">11</span>);</span><br><span class="line">			<span class="built_in">sprintf</span>(<span class="built_in">string</span>,<span class="string">&quot;%d.%d%%&quot;</span>,data[<span class="number">0</span>],data[<span class="number">1</span>]);</span><br><span class="line">			OLED_ShowString(<span class="number">80</span>,<span class="number">6</span>,(<span class="type">uint8_t</span> *)<span class="built_in">string</span>,<span class="number">16</span>);</span><br><span class="line">			</span><br><span class="line">			<span class="keyword">if</span>((data[<span class="number">2</span>]*<span class="number">10</span>+data[<span class="number">3</span>])&gt;WVAL)</span><br><span class="line">			&#123;</span><br><span class="line">			HAL_GPIO_WritePin(GPIOB,GPIO_PIN_5,GPIO_PIN_RESET);</span><br><span class="line">			HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_RESET);<span class="comment">//蜂鸣器预警</span></span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>((data[<span class="number">0</span>]*<span class="number">10</span>+data[<span class="number">1</span>])&gt;SVAL)</span><br><span class="line">			&#123;</span><br><span class="line">			HAL_GPIO_WritePin(GPIOB,GPIO_PIN_3,GPIO_PIN_RESET);</span><br><span class="line">			HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_RESET);</span><br><span class="line">			HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_RESET);<span class="comment">//蜂鸣器预警</span></span><br><span class="line">			&#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;                               <span class="comment">//  数据校验通过</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;                               <span class="comment">//  数据校验失败</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>                                            <span class="comment">//  如果DHT11不应答</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief  检测温湿度传感器是否存在(检测DHT11的应答信号)</span></span><br><span class="line"><span class="comment">  * @param  void</span></span><br><span class="line"><span class="comment">  * @retval 0/1</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> <span class="title function_">DHT11_Check</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line"> </span><br><span class="line">    Coarse_delay_us(<span class="number">40</span>);</span><br><span class="line">    <span class="keyword">if</span>(DHT11_READ_IO == <span class="number">0</span>)                          <span class="comment">//  检测到DHT11应答</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>                                            <span class="comment">//  检测到DHT11不应答</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief  设置引脚模式</span></span><br><span class="line"><span class="comment">  * @param  mode: 0-&gt;out, 1-&gt;in</span></span><br><span class="line"><span class="comment">  * @retval None</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="type">static</span> <span class="type">void</span> <span class="title function_">DHT11_GPIO_MODE_SET</span><span class="params">(<span class="type">uint8_t</span> mode)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(mode)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">/*  输入  */</span></span><br><span class="line">        GPIO_InitTypeDef GPIO_InitStruct;</span><br><span class="line">        GPIO_InitStruct.Pin = GPIO_PIN_14;                   <span class="comment">//  9号引脚</span></span><br><span class="line">        GPIO_InitStruct.Mode = GPIO_MODE_INPUT;             <span class="comment">//  输入模式</span></span><br><span class="line">        GPIO_InitStruct.Pull = GPIO_PULLUP;                 <span class="comment">//  上拉输入</span></span><br><span class="line">        HAL_GPIO_Init(GPIOB, &amp;GPIO_InitStruct);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">/*  输出  */</span></span><br><span class="line">        GPIO_InitTypeDef GPIO_InitStructure;</span><br><span class="line">        GPIO_InitStructure.Pin = GPIO_PIN_14;                <span class="comment">//  9号引脚</span></span><br><span class="line">        GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP;      <span class="comment">//  Push Pull 推挽输出模式</span></span><br><span class="line">        GPIO_InitStructure.Pull = GPIO_PULLUP;              <span class="comment">//  上拉输出</span></span><br><span class="line">        GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_HIGH;    <span class="comment">//  高速</span></span><br><span class="line">        HAL_GPIO_Init(GPIOB,&amp;GPIO_InitStructure);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief  程序延时 us , 必须在 72M 主频下使用</span></span><br><span class="line"><span class="comment">  * @param  us: &lt;= 4294967295</span></span><br><span class="line"><span class="comment">  * @retval None</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Coarse_delay_us</span><span class="params">(<span class="type">uint32_t</span> us)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">uint32_t</span> delay = (HAL_RCC_GetHCLKFreq() / <span class="number">4000000</span> * us);</span><br><span class="line">    <span class="keyword">while</span> (delay--)</span><br><span class="line">	&#123;</span><br><span class="line">		;</span><br><span class="line">	&#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+
+<p>OLED-IIC相关代码：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;oled.h&quot;</span><span class="comment">//这里只附赠相关c文件代码 详细完整代码见开源平台</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;i2c.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;oledfont.h&quot;</span>          <span class="comment">//头文件</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">uint8_t</span> CMD_Data[]=&#123;</span><br><span class="line"><span class="number">0xAE</span>, <span class="number">0x00</span>, <span class="number">0x10</span>, <span class="number">0x40</span>, <span class="number">0xB0</span>, <span class="number">0x81</span>, <span class="number">0xFF</span>, <span class="number">0xA1</span>, <span class="number">0xA6</span>, <span class="number">0xA8</span>, <span class="number">0x3F</span>,</span><br><span class="line">					</span><br><span class="line"><span class="number">0xC8</span>, <span class="number">0xD3</span>, <span class="number">0x00</span>, <span class="number">0xD5</span>, <span class="number">0x80</span>, <span class="number">0xD8</span>, <span class="number">0x05</span>, <span class="number">0xD9</span>, <span class="number">0xF1</span>, <span class="number">0xDA</span>, <span class="number">0x12</span>,</span><br><span class="line">					</span><br><span class="line"><span class="number">0xD8</span>, <span class="number">0x30</span>, <span class="number">0x8D</span>, <span class="number">0x14</span>, <span class="number">0xAF</span>&#125;;      <span class="comment">//初始化命令</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">WriteCmd</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">uint8_t</span> i = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;<span class="number">27</span>; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		HAL_I2C_Mem_Write(&amp;hi2c1 ,<span class="number">0x78</span>,<span class="number">0x00</span>,I2C_MEMADD_SIZE_8BIT,CMD_Data+i,<span class="number">1</span>,<span class="number">0x100</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//向设备写控制命令</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">OLED_WR_CMD</span><span class="params">(<span class="type">uint8_t</span> cmd)</span></span><br><span class="line">&#123;</span><br><span class="line">	HAL_I2C_Mem_Write(&amp;hi2c1 ,<span class="number">0x78</span>,<span class="number">0x00</span>,I2C_MEMADD_SIZE_8BIT,&amp;cmd,<span class="number">1</span>,<span class="number">0x100</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//向设备写数据</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">OLED_WR_DATA</span><span class="params">(<span class="type">uint8_t</span> data)</span></span><br><span class="line">&#123;</span><br><span class="line">	HAL_I2C_Mem_Write(&amp;hi2c1 ,<span class="number">0x78</span>,<span class="number">0x40</span>,I2C_MEMADD_SIZE_8BIT,&amp;data,<span class="number">1</span>,<span class="number">0x100</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//初始化oled屏幕</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">OLED_Init</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123; 	</span><br><span class="line">	HAL_Delay(<span class="number">200</span>);</span><br><span class="line"> </span><br><span class="line">	WriteCmd();</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//清屏</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">OLED_Clear</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">uint8_t</span> i,n;		    </span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)  </span><br><span class="line">	&#123;  </span><br><span class="line">		OLED_WR_CMD(<span class="number">0xb0</span>+i);</span><br><span class="line">		OLED_WR_CMD (<span class="number">0x00</span>); </span><br><span class="line">		OLED_WR_CMD (<span class="number">0x10</span>); </span><br><span class="line">		<span class="keyword">for</span>(n=<span class="number">0</span>;n&lt;<span class="number">128</span>;n++)</span><br><span class="line">			OLED_WR_DATA(<span class="number">0</span>);</span><br><span class="line">	&#125; </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//开启OLED显示    </span></span><br><span class="line"><span class="type">void</span> <span class="title function_">OLED_Display_On</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	OLED_WR_CMD(<span class="number">0X8D</span>);  <span class="comment">//SET DCDC命令</span></span><br><span class="line">	OLED_WR_CMD(<span class="number">0X14</span>);  <span class="comment">//DCDC ON</span></span><br><span class="line">	OLED_WR_CMD(<span class="number">0XAF</span>);  <span class="comment">//DISPLAY ON</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//关闭OLED显示     </span></span><br><span class="line"><span class="type">void</span> <span class="title function_">OLED_Display_Off</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	OLED_WR_CMD(<span class="number">0X8D</span>);  <span class="comment">//SET DCDC命令</span></span><br><span class="line">	OLED_WR_CMD(<span class="number">0X10</span>);  <span class="comment">//DCDC OFF</span></span><br><span class="line">	OLED_WR_CMD(<span class="number">0XAE</span>);  <span class="comment">//DISPLAY OFF</span></span><br><span class="line">&#125;		   			 </span><br><span class="line"><span class="type">void</span> <span class="title function_">OLED_Set_Pos</span><span class="params">(<span class="type">uint8_t</span> x, <span class="type">uint8_t</span> y)</span> </span><br><span class="line">&#123; 	</span><br><span class="line">	OLED_WR_CMD(<span class="number">0xb0</span>+y);</span><br><span class="line">	OLED_WR_CMD(((x&amp;<span class="number">0xf0</span>)&gt;&gt;<span class="number">4</span>)|<span class="number">0x10</span>);</span><br><span class="line">	OLED_WR_CMD(x&amp;<span class="number">0x0f</span>);</span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line"><span class="type">void</span> <span class="title function_">OLED_On</span><span class="params">(<span class="type">void</span>)</span>  </span><br><span class="line">&#123;  </span><br><span class="line">	<span class="type">uint8_t</span> i,n;		    </span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)  </span><br><span class="line">	&#123;  </span><br><span class="line">		OLED_WR_CMD(<span class="number">0xb0</span>+i);    <span class="comment">//设置页地址（0~7）</span></span><br><span class="line">		OLED_WR_CMD(<span class="number">0x00</span>);      <span class="comment">//设置显示位置—列低地址</span></span><br><span class="line">		OLED_WR_CMD(<span class="number">0x10</span>);      <span class="comment">//设置显示位置—列高地址   </span></span><br><span class="line">		<span class="keyword">for</span>(n=<span class="number">0</span>;n&lt;<span class="number">128</span>;n++)</span><br><span class="line">			OLED_WR_DATA(<span class="number">1</span>); </span><br><span class="line">	&#125; <span class="comment">//更新显示</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="type">unsigned</span> <span class="type">int</span> <span class="title function_">oled_pow</span><span class="params">(<span class="type">uint8_t</span> m,<span class="type">uint8_t</span> n)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">int</span> result=<span class="number">1</span>;	 </span><br><span class="line">	<span class="keyword">while</span>(n--)result*=m;    </span><br><span class="line">	<span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//显示2个数字</span></span><br><span class="line"><span class="comment">//x,y :起点坐标	 </span></span><br><span class="line"><span class="comment">//len :数字的位数</span></span><br><span class="line"><span class="comment">//size:字体大小</span></span><br><span class="line"><span class="comment">//mode:模式	0,填充模式;1,叠加模式</span></span><br><span class="line"><span class="comment">//num:数值(0~4294967295);	 		  </span></span><br><span class="line"><span class="type">void</span> <span class="title function_">OLED_ShowNum</span><span class="params">(<span class="type">uint8_t</span> x,<span class="type">uint8_t</span> y,<span class="type">unsigned</span> <span class="type">int</span> num,<span class="type">uint8_t</span> len,<span class="type">uint8_t</span> size2)</span></span><br><span class="line">&#123;         	</span><br><span class="line">	<span class="type">uint8_t</span> t,temp;</span><br><span class="line">	<span class="type">uint8_t</span> enshow=<span class="number">0</span>;						   </span><br><span class="line">	<span class="keyword">for</span>(t=<span class="number">0</span>;t&lt;len;t++)</span><br><span class="line">	&#123;</span><br><span class="line">		temp=(num/oled_pow(<span class="number">10</span>,len-t<span class="number">-1</span>))%<span class="number">10</span>;</span><br><span class="line">		<span class="keyword">if</span>(enshow==<span class="number">0</span>&amp;&amp;t&lt;(len<span class="number">-1</span>))</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span>(temp==<span class="number">0</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				OLED_ShowChar(x+(size2/<span class="number">2</span>)*t,y,<span class="string">&#x27; &#x27;</span>,size2);</span><br><span class="line">				<span class="keyword">continue</span>;</span><br><span class="line">			&#125;<span class="keyword">else</span> enshow=<span class="number">1</span>; </span><br><span class="line">		 	 </span><br><span class="line">		&#125;</span><br><span class="line">	 	OLED_ShowChar(x+(size2/<span class="number">2</span>)*t,y,temp+<span class="string">&#x27;0&#x27;</span>,size2); </span><br><span class="line">	&#125;</span><br><span class="line">&#125; </span><br><span class="line"><span class="comment">//在指定位置显示一个字符,包括部分字符</span></span><br><span class="line"><span class="comment">//x:0~127</span></span><br><span class="line"><span class="comment">//y:0~63</span></span><br><span class="line"><span class="comment">//mode:0,反白显示;1,正常显示				 </span></span><br><span class="line"><span class="comment">//size:选择字体 16/12 </span></span><br><span class="line"><span class="type">void</span> <span class="title function_">OLED_ShowChar</span><span class="params">(<span class="type">uint8_t</span> x,<span class="type">uint8_t</span> y,<span class="type">uint8_t</span> chr,<span class="type">uint8_t</span> Char_Size)</span></span><br><span class="line">&#123;      	</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> c=<span class="number">0</span>,i=<span class="number">0</span>;	</span><br><span class="line">		c=chr-<span class="string">&#x27; &#x27;</span>;<span class="comment">//得到偏移后的值			</span></span><br><span class="line">		<span class="keyword">if</span>(x&gt;<span class="number">128</span><span class="number">-1</span>)&#123;x=<span class="number">0</span>;y=y+<span class="number">2</span>;&#125;</span><br><span class="line">		<span class="keyword">if</span>(Char_Size ==<span class="number">16</span>)</span><br><span class="line">			&#123;</span><br><span class="line">			OLED_Set_Pos(x,y);	</span><br><span class="line">			<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)</span><br><span class="line">			OLED_WR_DATA(F8X16[c*<span class="number">16</span>+i]);</span><br><span class="line">			OLED_Set_Pos(x,y+<span class="number">1</span>);</span><br><span class="line">			<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)</span><br><span class="line">			OLED_WR_DATA(F8X16[c*<span class="number">16</span>+i+<span class="number">8</span>]);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> &#123;	</span><br><span class="line">				OLED_Set_Pos(x,y);</span><br><span class="line">				<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">6</span>;i++)</span><br><span class="line">				OLED_WR_DATA(F6x8[c][i]);</span><br><span class="line">				</span><br><span class="line">			&#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">//显示一个字符号串</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">OLED_ShowString</span><span class="params">(<span class="type">uint8_t</span> x,<span class="type">uint8_t</span> y,<span class="type">uint8_t</span> *chr,<span class="type">uint8_t</span> Char_Size)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> j=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span> (chr[j]!=<span class="string">&#x27;\0&#x27;</span>)</span><br><span class="line">	&#123;		OLED_ShowChar(x,y,chr[j],Char_Size);</span><br><span class="line">			x+=<span class="number">8</span>;</span><br><span class="line">		<span class="keyword">if</span>(x&gt;<span class="number">120</span>)&#123;x=<span class="number">0</span>;y+=<span class="number">2</span>;&#125;</span><br><span class="line">			j++;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//显示128x64 BMP图片</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">OLED_Draw12864BMP</span><span class="params">(<span class="type">uint8_t</span> BMP[])</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//显示显示BMP图片128×64 </span></span><br><span class="line">    <span class="type">uint16_t</span> j=<span class="number">0</span>;</span><br><span class="line">    <span class="type">uint8_t</span> x,y;</span><br><span class="line">    <span class="keyword">for</span>(y=<span class="number">0</span>; y&lt;<span class="number">8</span>; y++)</span><br><span class="line">    &#123;</span><br><span class="line">        OLED_Set_Pos(<span class="number">0</span>,y);</span><br><span class="line">        <span class="keyword">for</span>(x=<span class="number">0</span>; x&lt;<span class="number">128</span>; x++)</span><br><span class="line">        &#123;</span><br><span class="line"><span class="meta">#<span class="keyword">if</span> DISPLAY_MODE</span></span><br><span class="line">            OLED_WR_DATA(BMP[y]);</span><br><span class="line"><span class="meta">#<span class="keyword">else</span></span></span><br><span class="line">            OLED_WR_DATA(BMP[j++]);</span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//显示汉字</span></span><br><span class="line"><span class="comment">//hzk 用取模软件得出的数组</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">OLED_ShowCHinese</span><span class="params">(<span class="type">uint8_t</span> x,<span class="type">uint8_t</span> y,<span class="type">uint8_t</span> no)</span></span><br><span class="line">&#123;      			    </span><br><span class="line">	<span class="type">uint8_t</span> t,adder=<span class="number">0</span>;</span><br><span class="line">	OLED_Set_Pos(x,y);	</span><br><span class="line">    <span class="keyword">for</span>(t=<span class="number">0</span>;t&lt;<span class="number">16</span>;t++)</span><br><span class="line">		&#123;</span><br><span class="line">				OLED_WR_DATA(Hzk[<span class="number">2</span>*no][t]);</span><br><span class="line">				adder+=<span class="number">1</span>;</span><br><span class="line">     &#125;	</span><br><span class="line">		OLED_Set_Pos(x,y+<span class="number">1</span>);	</span><br><span class="line">    <span class="keyword">for</span>(t=<span class="number">0</span>;t&lt;<span class="number">16</span>;t++)</span><br><span class="line">			&#123;	</span><br><span class="line">				OLED_WR_DATA(Hzk[<span class="number">2</span>*no+<span class="number">1</span>][t]);</span><br><span class="line">				adder+=<span class="number">1</span>;</span><br><span class="line">      &#125;					</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="结果与测试分析"><a href="#结果与测试分析" class="headerlink" title="结果与测试分析"></a>结果与测试分析</h1><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"autoplay":true,"theme":"#FADFA3","loop":true,"lang":"zh-cn//语言","screenshot":true,"hotkey":true,"preload":"auto","volume":0.9,"video":{"url":"/resources/video/video.h265.mp4","pic":"/pic/cover1.jpg"},"danmaku":{"id":"9E2E3368B56CD123BB4","api":"https://api.prprpr.me/dplayer/","token":"tokendemo","maximum":1000,"addition":["['https://api.prprpr.me/dplayer/v3/bilibili?aid=4157142']"]}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">QQHRZFY</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://www.qqhrzfy.online/2023/02/22/%E5%8D%95%E7%89%87%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%BC%E5%90%88%E8%AE%BE%E8%AE%A1/">http://www.qqhrzfy.online/2023/02/22/%E5%8D%95%E7%89%87%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%BC%E5%90%88%E8%AE%BE%E8%AE%A1/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">QQHRZFY</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2023/02/22/%E5%8D%95%E7%89%87%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%BC%E5%90%88%E8%AE%BE%E8%AE%A1/">
+                    <div class="card-image">
+                        
+                        <img src="https://image.lceda.cn/avatars/2023/2/wgJTvT9uEKemUwC78Rg8IKtiUtp788dPjsZkvFjA.png" class="responsive-img" alt="单片机系统综合设计">
+                        
+                        <span class="card-title">单片机系统综合设计</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            HFUT电信工单片机系统综合设计（验收完成开源）
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-02-22
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            QQHRZFY
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/02/22/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="第一篇博客">
+                        
+                        <span class="card-title">第一篇博客</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            验证加密
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-02-22
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            QQHRZFY
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2023</span>
+            
+            <a href="/about" target="_blank">QQHR-ZFY</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">3.2k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/HFUTzhangfengyuan" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1300654007@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1300654007&website=www.oicqzone.com" class="tooltipped" target="_blank" data-tooltip="QQ联系我:1300654007" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+    
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
